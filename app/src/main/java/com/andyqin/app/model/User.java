@@ -4,8 +4,8 @@ import java.util.List;
 
 /**
  * Created by qinbaoyuan on 2017/8/29.
+ *
  */
-
 public class User {
     public String name;
     public String address;

@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="TitleBarView">
+        <attr name="title_bar_back_theme" format="enum">
+            <enum name="none" value="0" />
+            <enum name="normal" value="1" />
+        </attr>
+
+        <attr name="title_center_text" format="string" />
+    </declare-styleable>
+</resources>

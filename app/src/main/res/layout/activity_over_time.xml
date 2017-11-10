@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/txt_calendar_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="@color/color_4e"
+        android:textSize="19dp" />
+
+    <com.othershe.calendarview.weiget.CalendarView
+        android:id="@+id/calendar_view_over_time_detail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:choose_type="multi" />
+
+    <TextView
+        android:id="@+id/txt_show_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_4e"
+        android:textSize="16dp" />
+</LinearLayout>

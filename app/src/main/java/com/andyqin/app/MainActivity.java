@@ -3,22 +3,17 @@ package com.andyqin.app;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
-import android.widget.TextView;
 
-import com.amap.api.location.AMapLocation;
-import com.andyqin.app.amap.LFAMapLocator;
 import com.andyqin.app.model.User;
-import com.andyqin.framework.OnServiceListener;
+import com.andyqin.framework.network.OnServiceListener;
 import com.andyqin.framework.network.volley.ServiceManagerImpl;
 
-import java.io.File;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -62,15 +57,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getUserList() {
-        ServiceManagerImpl.getInstance(MainActivity.this).load("http://123.57.242.138:8080/userserver/api/getUsers",
-                User.AllUser.class, new OnServiceListener<User.AllUser>() {
-                    @Override
-                    public void OnServerSuccess(User.AllUser response, String token) {
-                        if (response != null) {
-                            List<User> userList = response.allUser;
-
-                        }
-                    }
-                });
     }
 }

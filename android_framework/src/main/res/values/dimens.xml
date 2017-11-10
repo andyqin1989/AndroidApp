@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="title_bar_height">42dp</dimen>
+
+    <dimen name="margin_left_15">15dp</dimen>
+    <dimen name="margin_right_15">15dp</dimen>
+    <dimen name="margin_top_10">10dp</dimen>
+    <dimen name="margin_bottom_10">10dp</dimen>
+</resources>
